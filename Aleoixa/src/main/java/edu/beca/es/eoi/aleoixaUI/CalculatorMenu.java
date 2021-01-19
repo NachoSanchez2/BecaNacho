@@ -24,6 +24,7 @@ public class CalculatorMenu {
 		} catch (Exception e) {
 			e.printStackTrace();
 			logger.debug("Ha habido un problema con la introduccion de los valores para calcular");
+			printOperationMenu();
 		}
 		System.out.println("El resultado es: ".concat(Double.toString(result)));
 

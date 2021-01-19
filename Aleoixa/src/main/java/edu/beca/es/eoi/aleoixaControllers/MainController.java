@@ -15,7 +15,7 @@ public class MainController {
 	private static final CalculatorMenu CALCULATORMENU = new CalculatorMenu();
 	private static final TranslationMenu TRANSLATEMENU = new TranslationMenu();
 
-	public MainController(String userOption) {
+	public void mainController(String userOption) {
 		logger.info("Entra en el controlador del main");
 		if ("¿Qué día es?".equalsIgnoreCase(userOption)) {
 			DAYTIMEMENU.showDay();
