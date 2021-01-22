@@ -1,0 +1,26 @@
+[
+  {
+    "faculty": "DISEÑO",
+    "idUser": 1,
+    "id": 1,
+    "name": "Hola",
+    "surname": "esto",
+    "dni": "test1",
+    "mail": "es una",
+    "username": "pepe",
+    "password": "prueba",
+    "tipoPersona": 1
+  },
+  {
+    "faculty": "INGENIERÍA",
+    "idUser": 1,
+    "id": 1,
+    "name": "test",
+    "surname": "test",
+    "dni": "test1",
+    "mail": "test@gmail.com",
+    "username": "pepe",
+    "password": "test",
+    "tipoPersona": 1
+  }
+]

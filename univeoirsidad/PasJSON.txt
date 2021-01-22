@@ -1,0 +1,38 @@
+[
+  {
+    "unit": "MAYORISTA",
+    "idUser": 0,
+    "id": 3,
+    "name": "Ahora",
+    "surname": "si",
+    "dni": "test3",
+    "mail": "que es una",
+    "username": "pablo",
+    "password": "prueba",
+    "tipoPersona": 3
+  },
+  {
+    "unit": "MAYORISTA",
+    "idUser": 0,
+    "id": 3,
+    "name": "Ahora",
+    "surname": "si",
+    "dni": "test3",
+    "mail": "que es una",
+    "username": "pablo",
+    "password": "prueba",
+    "tipoPersona": 3
+  },
+  {
+    "unit": "CONSERJE",
+    "idUser": 3,
+    "id": 3,
+    "name": "test",
+    "surname": "test",
+    "dni": "test3",
+    "mail": "test@gmail.com",
+    "username": "pablo",
+    "password": "test",
+    "tipoPersona": 3
+  }
+]
