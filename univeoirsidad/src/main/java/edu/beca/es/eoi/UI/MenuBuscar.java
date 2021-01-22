@@ -56,11 +56,14 @@ public class MenuBuscar {
 	public void readByUsername() {
 		System.out.print("Introduzca el usuario: ");
 		String username = ESCANERSTRINGS.nextLine();
+		Student s = null;
+		Professor p = null;
+		Pas pa = null;
 		Person e = null;
 
 		try {
 			logger.debug("Se busca al usuario: " + username);
-			e = PERSONCONTROLLER.readByUsername(username);
+			e = PERSONCONTROLLER.read(username, null);
 		} catch (Exception e1) {
 			System.out.println("No se encuentra el usuario que desea buscar");
 			e1.printStackTrace();
@@ -68,11 +71,27 @@ public class MenuBuscar {
 		}
 		System.out.println(e.getName() + " " + e.getSurname() + " " + e.getDni() + " " + e.getMail() + ". ");
 		if (e.getTipoPersona() == STUDENT) {
-			System.out.println("FACULTAD: " + ((Student) e).getFaculty());
+			try {
+				s = (Student) PERSONCONTROLLER.readByUsername(e.getUsername());
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			System.out.println("");
+			System.out.println("FACULTAD: " + s.getFaculty());
 		} else if (e.getTipoPersona() == PROFESSOR) {
-			System.out.println("OFICINA: " + ((Professor) e).getOffice());
+			try {
+				p = (Professor) PERSONCONTROLLER.readByUsername(username);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			System.out.println("OFICINA: " + p.getOffice());
 		} else if (e.getTipoPersona() == PAS) {
-			System.out.println("UNIDAD: " + ((Pas) e).getUnit());
+			try {
+				pa = (Pas) PERSONCONTROLLER.readByUsername(username);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			System.out.println("UNIDAD: " + pa.getUnit());
 		}
 	}
 

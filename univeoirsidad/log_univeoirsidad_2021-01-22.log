@@ -1,0 +1,522 @@
+01:23:32--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:23:32--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:23:36--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:23:40--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:23:40--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo readByUsername del controlador de personas
+01:23:40--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca a la persona con el usuario 1
+01:23:40--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:23:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:23:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:23:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:23:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:23:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:23:40--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:23:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:23:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:23:40--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:23:41--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:23:41--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:23:41--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:23:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:23:41--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:23:41--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:23:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:24:26--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:24:26--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:24:26--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:27:41--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:27:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:27:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:27:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:27:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:27:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:27:41--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:27:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:27:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:27:41--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:27:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:27:41--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:27:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:27:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:27:44--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:27:44--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:27:44--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:32:05--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:32:05--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:32:08--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:32:10--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:32:10--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:32:10--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:32:10--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:32:10--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:32:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:32:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:32:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:32:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:32:10--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:32:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:32:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:32:10--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:32:11--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:32:11--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo readByUsername del controlador de personas
+01:32:11--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca a la persona con el usuario 1
+01:32:11--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:32:11--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:32:11--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:32:11--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:32:11--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:32:11--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:32:11--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:32:11--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:32:11--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:32:11--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:32:19--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:32:19--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:32:19--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:32:47--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:32:47--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:32:49--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:32:50--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:32:50--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:32:50--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:32:50--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:32:50--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:32:50--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:32:50--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:32:50--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:32:50--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:32:50--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:32:50--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:32:50--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:32:50--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:32:51--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:32:51--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:32:51--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:32:51--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:32:51--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:32:51--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:32:51--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:32:57--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo readByUsername del controlador de personas
+01:32:57--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca a la persona con el usuario 1
+01:32:57--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:32:57--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:32:57--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:32:57--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:32:57--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:32:57--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:32:57--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:32:57--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:32:57--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:32:57--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:32:59--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:32:59--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:32:59--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:35:26--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:35:26--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:35:27--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:35:29--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:35:29--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:35:29--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:35:29--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:35:29--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:35:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:35:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:35:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:35:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:35:29--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:35:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:35:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:35:29--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:35:30--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:35:30--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo readByUsername del controlador de personas
+01:35:30--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca a la persona con el usuario 1
+01:35:30--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:35:30--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:35:30--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:35:30--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:35:30--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:35:30--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:35:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:35:30--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:35:30--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:35:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:35:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:35:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:35:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:36:02--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:36:02--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:36:05--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:36:07--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:36:07--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:36:07--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:36:07--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:36:07--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:36:07--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:36:07--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:36:07--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:36:07--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:36:07--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:36:07--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:36:07--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:36:07--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:36:08--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:36:08--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:36:08--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:36:08--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:36:08--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:36:08--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:36:08--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:36:21--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo readByUsername del controlador de personas
+01:36:21--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca a la persona con el usuario 1
+01:36:21--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:36:21--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:36:21--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:36:21--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:36:21--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:36:21--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:36:21--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:36:21--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:36:21--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:36:21--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:36:29--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:36:29--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:36:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:38:36--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:38:36--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:38:38--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:38:41--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:38:41--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:38:41--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:38:41--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:38:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:38:41--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:38:41--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:38:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:38:41--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:38:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:38:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:38:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:38:41--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:38:41--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:39:26--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:39:26--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:39:28--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:39:29--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:39:29--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:39:29--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:39:29--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:39:29--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:39:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:39:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:39:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:39:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:39:29--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:39:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:39:29--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:39:29--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:39:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:39:30--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:39:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:39:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:39:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:39:30--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:39:30--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:39:32--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo readByUsername del controlador de personas
+01:39:32--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca a la persona con el usuario 1
+01:39:32--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:39:32--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:39:32--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:39:32--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:39:32--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo readByUsername del repository
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:39:32--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:39:32--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:39:32--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:39:32--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: CALL readbyUsername(?,?);
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:39:32--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:39:35--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:39:35--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:39:35--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:40:22--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:40:22--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:40:24--[main] INFO  edu.beca.es.eoi.UI.MenuDarAlta  - Se entra en el menu DAR DE ALTA
+01:40:32--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:40:32--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:40:34--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:40:37--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:40:37--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:40:37--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:40:37--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:40:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:40:37--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:40:37--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:40:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:40:37--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:40:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:40:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:40:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:40:37--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:40:37--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:40:53--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:40:53--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:40:53--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:40:53--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:40:53--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:40:53--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:40:53--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:40:53--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:40:53--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:40:53--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:40:53--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:40:53--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:40:53--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:41:06--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:41:06--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:41:08--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:41:09--[main] DEBUG edu.beca.es.eoi.UI.MenuBuscar  - Se busca al usuario: 1
+01:41:09--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:41:09--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:41:09--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:41:09--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:41:09--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:41:09--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:41:09--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:41:09--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:41:09--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:41:09--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:41:09--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:41:09--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:41:10--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:41:10--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:41:10--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:41:10--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:41:10--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:41:10--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:41:10--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:41:13--[main] INFO  edu.beca.es.eoi.controller.PersonController  - Se entra en el metodo read del controlador de personas
+01:41:13--[main] DEBUG edu.beca.es.eoi.controller.PersonController  - Se busca una persona por su dni o usuario
+01:41:13--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:41:13--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:41:13--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:41:13--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:41:13--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:41:13--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:41:13--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:41:13--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:41:13--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:41:13--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:41:13--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:43:08--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:43:08--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:43:11--[main] INFO  edu.beca.es.eoi.UI.MenuBuscar  - Entro en el buscador
+01:44:30--[main] INFO  edu.beca.es.eoi.Main.MainApp  - Se inicia la aplicacion
+01:44:30--[main] INFO  edu.beca.es.eoi.UI.MenuPrincipal  - Se entra en el menuPrincipal
+01:44:33--[main] INFO  edu.beca.es.eoi.UI.MenuDarAlta  - Se entra en el menu DAR DE ALTA
+01:44:45--[main] DEBUG edu.beca.es.eoi.UI.MenuDarAlta  - Se introducen los datos del usuario que se va a guardar: PEPE,PEPE,PEPE,PEPE,PEPE,PEPE,INFOR
+01:44:45--[main] INFO  edu.beca.es.eoi.controller.StudentController  - Se entra en el metodo savePas del controlador de la entidad Student
+01:44:45--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo save de la entidad Persona de la implementacion de servicios
+01:44:45--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo savePerson del repository
+01:44:45--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:44:45--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:44:45--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:44:45--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:44:45--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:44:45--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:44:45--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:44:45--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:44:46--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: INSERT INTO useruniversity (name, dni, surname, mail, username, password, tipoPersona) VALUES (?, ?, ?, ?, ?, ?, ?);
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:44:46--[main] INFO  edu.beca.es.eoi.serviceImpl.PersonServiceImpl  - Entro en el metodo readPerson de la entidad Persona de la implementacion de servicios
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo read Person del repository
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:44:46--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:44:46--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:44:46--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: SELECT u.id,u.name, u.dni, u.surname, u.mail, u.username, u.password, u.tipoPersona FROM useruniversity u  WHERE u.username = ? OR u.dni = ?
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+01:44:46--[main] DEBUG edu.beca.es.eoi.controller.StudentController  - Se guarda la persona PEPE,,PEPE,PEPE,PEPE,PEPE,PEPE,1,INFOR
+01:44:46--[main] INFO  edu.beca.es.eoi.serviceImpl.StudentServiceImpl  - Entro en el metodo saveStudent de la entidad Student de la implementacion de Servicio
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Entramos en el metodo saveStudent del repository
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+01:44:46--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/univeoirsidad.properties
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+01:44:46--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/univeoirsidad?serverTimezone=UTC User: root Password: 1234
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se genera la peticion a BBDD
+01:44:46--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Peticion a BBDD: INSERT INTO studentuniversity (faculty, idUser) VALUES (?,?);
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se perpara la peticion
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se ejecuta la peticion
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+01:44:46--[main] INFO  edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl  - Se llama al metodo closeConnection
+01:44:46--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion

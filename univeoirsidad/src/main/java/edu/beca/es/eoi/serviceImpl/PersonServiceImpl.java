@@ -2,7 +2,10 @@ package edu.beca.es.eoi.serviceImpl;
 
 import org.apache.log4j.Logger;
 
+import edu.beca.es.eoi.entity.Pas;
 import edu.beca.es.eoi.entity.Person;
+import edu.beca.es.eoi.entity.Professor;
+import edu.beca.es.eoi.entity.Student;
 import edu.beca.es.eoi.repository.PersonRepository;
 import edu.beca.es.eoi.repositoryImpl.PersonRepositoryJDBCImpl;
 import edu.beca.es.eoi.service.PersonService;
@@ -35,7 +38,15 @@ public class PersonServiceImpl implements PersonService {
 	@Override
 	public Person readByUsername(int tipoPersona, String username) {
 		logger.info("Entro en el metodo readByUsername de la entidad Persona de la implementacion de servicios");
-		return REPOSITORY.readByUsername(tipoPersona, username);
+		Person person = null;
+		if(tipoPersona==1) {
+			person = (Student) REPOSITORY.readByUsername(tipoPersona, username);
+		}else if(tipoPersona ==2) {
+			person = (Professor)REPOSITORY.readByUsername(tipoPersona, username);
+		}else if(tipoPersona ==3) {
+			person = (Pas)REPOSITORY.readByUsername(tipoPersona, username);
+		}
+		return person;
 	}
 
 	@Override

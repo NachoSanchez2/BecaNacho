@@ -57,6 +57,6 @@ public class MenuPrincipal {
 				break;
 			}
 		} while (!exitOK);
-
+		ESCANERENTEROS.close();
 	}
 }

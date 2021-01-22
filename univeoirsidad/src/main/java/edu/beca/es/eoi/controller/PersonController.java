@@ -10,6 +10,12 @@ public class PersonController {
 	private static final PersonService PERSONSERVICE = new PersonServiceImpl();
 	private static final Logger logger = Logger.getLogger(PersonController.class);
 
+	public Person read(String username, String dni) {
+		logger.info("Se entra en el metodo read del controlador de personas");
+		logger.debug("Se busca una persona por su dni o usuario");
+		return PERSONSERVICE.read(username, dni);
+	}
+
 	public Person readByUsername(String username) throws Exception {
 		logger.info("Se entra en el metodo readByUsername del controlador de personas");
 		logger.debug("Se busca a la persona con el usuario " + username);

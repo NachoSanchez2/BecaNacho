@@ -30,7 +30,7 @@ public class MenuDarAlta {
 		int userOption = 0;
 		System.out.println(" Bienvenido al menu dar de ALTA ");
 		System.out.println(" * * * * * * * * * * * * * * *  ");
-		System.out.println("   1.- Dar de alta un alumno    " + "   2.- Dar de alta un profesor  "
+		System.out.println("   1.- Dar de alta un alumno    \n" + "   2.- Dar de alta un profesor  \n"
 				+ "   3.- Dar de alta un PAS       ");
 
 		try {
