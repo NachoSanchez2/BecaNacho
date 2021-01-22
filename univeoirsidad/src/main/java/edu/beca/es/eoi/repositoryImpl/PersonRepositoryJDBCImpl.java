@@ -22,7 +22,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public boolean save(Person e) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo savePerson del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		boolean saveOK = false;
@@ -71,7 +71,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public boolean saveStudent(int idUser, Person e) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo saveStudent del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		boolean saveOK = false;
@@ -114,7 +114,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public boolean saveProfessor(int idUser, Person e) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo saveProfessor del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		boolean saveOK = false;
@@ -157,7 +157,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public boolean savePas(int idUser, Person e) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo savePas del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		boolean saveOK = false;
@@ -200,7 +200,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public Person read(String username, String dni) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo read Person del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		Person userUniversity = null;
@@ -248,7 +248,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public Person readByUsername(int tipoPersona, String username) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo readByUsername del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		Person userUniversity = null;
@@ -305,7 +305,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public Person readByDNI(int tipoPersona, String dni) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo readByDni del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		Person userUniversity = null;
@@ -362,7 +362,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public Person uploadByUsername(int tipoPersona, Person newPerson, String username) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo uploadByUsername del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 
@@ -419,7 +419,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public Person uploadByDNI(int tipoPersona, Person newPerson, String dni) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo uploadByDni del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 
@@ -476,7 +476,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public boolean deleteByUsername(String username) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo deleteByUsername del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		boolean deleteOK = false;
@@ -517,7 +517,7 @@ public class PersonRepositoryJDBCImpl implements PersonRepository {
 	@Override
 	public boolean deleteByDNI(String dni) {
 		// Declaracion de variables
-		logger.info("Entramos en el metodo Read by spanishWord");
+		logger.info("Entramos en el metodo deleteByDNI del repository");
 		DataManager dataManager = new DataManager();
 		Connection conn = dataManager.getConnection(isTEST);
 		boolean deleteOK = false;

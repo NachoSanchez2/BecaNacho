@@ -3,6 +3,8 @@ package edu.beca.es.eoi.UI;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import edu.beca.es.eoi.controller.PasController;
 import edu.beca.es.eoi.controller.PersonController;
 import edu.beca.es.eoi.controller.ProfessorController;
@@ -15,6 +17,7 @@ import edu.beca.es.eoi.entity.Student;
 public class MenuModificar {
 
 	private static final MenuPrincipal MENU = new MenuPrincipal();
+	private static final Logger logger = Logger.getLogger(MenuModificar.class);
 
 	private static final PersonController PERSONCONTROLLER = new PersonController();
 	private static final StudentController STUDENTCONTROLLER = new StudentController();
@@ -32,6 +35,7 @@ public class MenuModificar {
 	private static final int DNI = 2;
 
 	public void printMenuModificar() {
+		logger.info("Se entra en el menu modificar");
 		System.out.println("   Bienvenido al modificador   ");
 		System.out.println("* * * * * * * * * * * * * * * *");
 		System.out.println("   1.- Modificar por usuario   \n" + "   2.- Modificar por dni       ");
@@ -58,7 +62,6 @@ public class MenuModificar {
 	}
 
 	public void updateByUsername() {
-
 		String newFaculty = "";
 		String newOffice = "";
 		String newUnit = "";
@@ -80,25 +83,43 @@ public class MenuModificar {
 		String newPassword = ESCANERSTRINGS.nextLine();
 
 		try {
+
+			logger.debug("Se busca al usuario: " + username);
 			persona = PERSONCONTROLLER.readByUsername(username);
 			tipoPersona = persona.getTipoPersona();
+
 			if (tipoPersona == STUDENT) {
+
 				System.out.println("Nueva facultad: ");
 				newFaculty = ESCANERSTRINGS.nextLine();
+
+				logger.debug("Se introducen los nuevos datos que se van a guardar: " + newName + "," + newSurname + ","
+						+ newMail + "," + newPassword + "," + newFaculty);
+
 				student = STUDENTCONTROLLER.uploadByUsername(newName, persona.getDni(), newSurname, newMail,
 						newPassword, newFaculty);
 				System.out.println(student.getName() + " " + student.getSurname() + " " + student.getDni() + " "
 						+ student.getMail() + ". FACULTAD: " + ((Student) student).getFaculty());
 			} else if (tipoPersona == PROFESSOR) {
+
 				System.out.println("Nueva oficina: ");
 				newOffice = ESCANERSTRINGS.nextLine();
+
+				logger.debug("Se introducen los nuevos datos que se van a guardar: " + newName + "," + newSurname + ","
+						+ newMail + "," + newPassword + "," + newOffice);
+
 				professor = PROFESSORCONTROLLER.uploadByUsername(newName, persona.getDni(), newSurname, newMail,
 						newPassword, newOffice);
 				System.out.println(professor.getName() + " " + professor.getSurname() + " " + professor.getDni() + " "
 						+ professor.getMail() + ". OFICINA: " + ((Professor) professor).getOffice());
 			} else if (tipoPersona == PAS) {
+
 				System.out.println("Nueva unidad: ");
 				newUnit = ESCANERSTRINGS.nextLine();
+
+				logger.debug("Se introducen los nuevos datos que se van a guardar: " + newName + "," + newSurname + ","
+						+ newMail + "," + newPassword + "," + newUnit);
+
 				pas = PASCONTROLLER.uploadByUsername(newName, persona.getDni(), newSurname, newMail, newPassword,
 						newUnit);
 				System.out.println(pas.getName() + " " + pas.getSurname() + " " + pas.getDni() + " " + pas.getMail()

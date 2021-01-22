@@ -3,25 +3,30 @@ package edu.beca.es.eoi.UI;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import edu.beca.es.eoi.controller.PasController;
 import edu.beca.es.eoi.controller.ProfessorController;
 import edu.beca.es.eoi.controller.StudentController;
 
 public class MenuDarAlta {
 
+	private static final Logger logger = Logger.getLogger(MenuDarAlta.class);
+
 	private static final StudentController STUDENTCONTROLLER = new StudentController();
 	private static final ProfessorController PROFESSORCONTROLLER = new ProfessorController();
 	private static final PasController PASCONTROLLER = new PasController();
-	
+
 	private static final int STUDENT = 1;
 	private static final int PROFESSOR = 2;
 	private static final int PAS = 3;
-	
+
 	private static final Scanner ESCANERENTEROS = new Scanner(System.in);
 	private static final Scanner ESCANERSTRINGS = new Scanner(System.in);
 	private static final MenuPrincipal MENUPRINCIPAL = new MenuPrincipal();
 
 	public void printMenuDarAlta() {
+		logger.info("Se entra en el menu DAR DE ALTA");
 		int userOption = 0;
 		System.out.println(" Bienvenido al menu dar de ALTA ");
 		System.out.println(" * * * * * * * * * * * * * * *  ");
@@ -67,6 +72,8 @@ public class MenuDarAlta {
 		String faculty = ESCANERSTRINGS.nextLine();
 
 		try {
+			logger.debug("Se introducen los datos del usuario que se va a guardar: " + name + "," + dni + "," + surname
+					+ "," + mail + "," + username + "," + password + "," + faculty);
 			STUDENTCONTROLLER.saveStudent(name, dni, surname, mail, username, password, STUDENT, faculty);
 		} catch (Exception e) {
 			MENUPRINCIPAL.printMainMenu();
@@ -91,6 +98,8 @@ public class MenuDarAlta {
 		String office = ESCANERSTRINGS.nextLine();
 
 		try {
+			logger.debug("Se introducen los datos del usuario que se va a guardar: " + name + "," + dni + "," + surname
+					+ "," + mail + "," + username + "," + password + "," + office);
 			PROFESSORCONTROLLER.saveProfessor(name, dni, surname, mail, username, password, PROFESSOR, office);
 		} catch (Exception e) {
 			MENUPRINCIPAL.printMainMenu();
@@ -115,6 +124,8 @@ public class MenuDarAlta {
 		String unit = ESCANERSTRINGS.nextLine();
 
 		try {
+			logger.debug("Se introducen los datos del usuario que se va a guardar: " + name + "," + dni + "," + surname
+					+ "," + mail + "," + username + "," + password + "," + unit);
 			PASCONTROLLER.savePas(name, dni, surname, mail, username, password, PAS, unit);
 		} catch (Exception e) {
 			MENUPRINCIPAL.printMainMenu();
