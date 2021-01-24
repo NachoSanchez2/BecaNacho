@@ -18,7 +18,8 @@ public class MainMenu {
 	// Constants
 	private static final int MAKESONG = 1;
 	private static final int LISTSONGS = 2;
-	private static final int EXIT = 3;
+	private static final int DELETESONG = 3;
+	private static final int EXIT = 4;
 
 	// Song menu and controller instance
 	private static final SongMenu SONGMENU = new SongMenu();
@@ -34,8 +35,8 @@ public class MainMenu {
 		do {
 			System.out.println("    BIENVENIDO A DJEOI    ");
 			System.out.println("**************************");
-			System.out.println(
-					"  1.- Crear melodía       \n" + "  2.- Listar melodías     \n" + "  4.- SALIR               ");
+			System.out.println("  1.- Crear melodía       \n" + "  2.- Listar melodías     \n"
+					+ "  3.- Borrar melodía      \n" + "  4.- SALIR               ");
 			System.out.println("**************************");
 
 			// Declaration
@@ -59,6 +60,9 @@ public class MainMenu {
 					System.out.println(song);
 				}
 				SONGMENU.playSong();
+				break;
+			case DELETESONG:
+				SONGMENU.deleteSong();
 				break;
 			case EXIT:
 				exitOK = true;

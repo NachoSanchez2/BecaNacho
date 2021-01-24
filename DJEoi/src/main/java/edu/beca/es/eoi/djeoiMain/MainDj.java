@@ -12,5 +12,6 @@ public class MainDj {
 		logger.info("Se enciende la aplicacion");
 		MENU.printMenuMain();
 		logger.info("Se apaga la aplicacion");
+
 	}
 }

@@ -14,23 +14,23 @@ public class SongController {
 	// Configuration: Logger, jukebox and SERVICE;
 	private static final Logger logger = Logger.getLogger(SongController.class);
 	private static final Player jukebox = new Player();
-	private static final SongService SERVICE = new SongServiceImpl();
+	private static final SongService SONGSERVICE = new SongServiceImpl();
 
 	// Global variables
 	private static Map<String, String> songs;
 
 	public Map<String, String> readAllSongs() {
-		return SERVICE.readAllSongs();
+		return SONGSERVICE.readAllSongs();
 	}
 
 	public boolean playSong(String songName) {
 		boolean playOK = false;
 		logger.info(
 				"Se entra en el metodo playSong, se le pasa la cancion seleccionada y se recoge la lista de canciones");
-		songs = SERVICE.readAllSongs();
+		songs = SONGSERVICE.readAllSongs();
 		for (String songAUX : songs.keySet()) {
 			if (songAUX.equalsIgnoreCase(songName)) {
-				Pattern song = new Pattern(songs.get(songAUX));
+				Pattern song = new Pattern(songs.get(songAUX).toString());
 				logger.debug("El valor de la cancion es: " + song);
 				jukebox.play(song);
 				playOK = true;
@@ -40,6 +40,7 @@ public class SongController {
 		return playOK;
 	}
 
-	
-
+	public boolean deleteSong(String songName) {
+		return SONGSERVICE.delete(songName);
+	}
 }
