@@ -6,7 +6,7 @@ import java.sql.Connection;
 
 import org.junit.jupiter.api.Test;
 
-import edu.beca.es.eoi.djeoiDataController.DataManager;
+import edu.beca.es.eoi.djeoiDataManager.DataManager;
 
 class DataManagerTest {
 

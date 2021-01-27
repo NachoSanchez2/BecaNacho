@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 import org.apache.log4j.Logger;
 
-import edu.beca.es.eoi.djeoiDataController.DataManager;
+import edu.beca.es.eoi.djeoiDataManager.DataManager;
 import edu.beca.es.eoi.djeoiEntity.Song;
 import edu.beca.es.eoi.djeoiMain.MainDj;
 import edu.beca.es.eoi.djeoiRepository.SongRepository;

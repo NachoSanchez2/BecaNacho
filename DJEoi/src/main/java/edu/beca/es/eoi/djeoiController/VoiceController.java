@@ -83,11 +83,10 @@ public class VoiceController {
 
 	public Voice freeComposition(String userComposition) {
 		String userCompositionParsed = "i".concat("[".concat(instrument).concat("] ").concat(userComposition));
-		String voiceName = "V".concat(Integer.toString(index));
-		String voiceComposition = "".concat(voiceName.concat(userCompositionParsed));
-		Voice voice = VOICESERVICE.makeVoice(voiceName, voiceComposition);
+		String voiceComposition = "".concat(userCompositionParsed.concat(userCompositionParsed));
+		Voice voice = VOICESERVICE.makeVoice(userCompositionParsed, voiceComposition);
 		index++;
-		voices.put(voiceName, voice);
+		voices.put(voiceComposition, voice);
 		return voice;
 	}
 

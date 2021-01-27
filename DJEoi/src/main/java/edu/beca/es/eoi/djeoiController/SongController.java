@@ -30,7 +30,7 @@ public class SongController {
 		songs = SONGSERVICE.readAllSongs();
 		for (String songAUX : songs.keySet()) {
 			if (songAUX.equalsIgnoreCase(songName)) {
-				Pattern song = new Pattern(songs.get(songAUX).toString());
+				Pattern song = new Pattern(songs.get(songAUX));
 				logger.debug("El valor de la cancion es: " + song);
 				jukebox.play(song);
 				playOK = true;
