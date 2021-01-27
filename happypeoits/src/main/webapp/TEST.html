@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+<title>FORM_TEST</title>
+<meta charset="UTF-8">
+<meta name=“description” content=“Curso_HTML5_eoi”>
+<meta name=“author” content=“JuanIgnacio”>
+<meta name=“viewport” content=“width=device-width,initial-scale=1.0”>
+<link rel="stylesheet" href="css/TEST.css">
+
+<!-- bar icon -->
+<!-- <link rel="icon" href="img/favicon-16x16.png" type="image/png" -->
+<!-- 	sizes="32x32"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+<body>
+	<form id="regForm" method="POST" action="../PetServlet.java"
+		enctype="multipart/form-data">
+
+		<h1>Dar de alta mascota:</h1>
+
+		<div class="tab">
+			<label for="name">Name:</label> <input placeholder="Nombre..."
+				name="name" oninput="this.className = ''"> <label
+				for="description">Descripción:</label> <input
+				placeholder="Descripción..." oninput="this.className = ''">
+		</div>
+
+		<div class="tab">
+			<p></p>
+			<label for="location">Ubicación:</label> <input
+				placeholder="Ubicacion..." name="location"
+				oninput="this.className = ''"> <label for="photo">Adjunte
+				una foto:</label> <input type="file" name="adjunto" accept=".pdf,.jpg,.png" />
+			<label for="typePet">Tipo animal:</label> <select name="list">
+				<option name="list" value="" selected disabled=hidden>Seleccione
+					una opción</option>
+				<option name="list" value=1>PERRO</option>
+				<option name="list" value=2>GATO</option>
+				<option name="list" value=3>PAJARO</option>
+				<option name="list" value=4>OTRO</option>
+			</select>
+		</div>
+
+		<div style="overflow: auto;">
+			<div style="float: right;">
+				<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+				<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			</div>
+		</div>
+
+		<!-- Circles which indicates the steps of the form: -->
+		<div style="text-align: center; margin-top: 40px;">
+			<span class="step"></span> <span class="step"></span>
+		</div>
+	</form>
+	<script type="text/javascript" src="js/TEST.js"></script>
+</body>
+</html>

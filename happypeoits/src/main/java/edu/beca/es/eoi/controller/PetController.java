@@ -28,7 +28,7 @@ public class PetController {
 	private static final BirdService BIRDSERVICE = new BirdServiceImpl();
 	private static final OtherService OTHERSERVICE = new OtherServiceImpl();
 
-	// Controllers
+	// Menus
 	private static final DogMenu DOGMENU = new DogMenu();
 	private static final CatMenu CATMENU = new CatMenu();
 	private static final BirdMenu BIRDMENU = new BirdMenu();

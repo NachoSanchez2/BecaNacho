@@ -1,0 +1,59 @@
+10:59:11--[main] INFO  edu.beca.es.eoi.main.MainHappyPeoits  - Se enciende la aplicacion
+10:59:11--[main] INFO  edu.beca.es.eoi.UIConsole.MainMenu  - Se entra en el menu principal
+10:59:16--[main] INFO  edu.beca.es.eoi.UIConsole.PetMenu  - Entra en el menu mascota para dar de alta una mascota
+10:59:40--[main] DEBUG edu.beca.es.eoi.UIConsole.PetMenu  - El usuario mete los valores: Piolin alte amarillo, pequeñito, cantor PAJARO
+10:59:40--[main] INFO  edu.beca.es.eoi.controller.PetController  - Entra en el metodo savePet del controlador
+10:59:40--[main] INFO  edu.beca.es.eoi.serviceImpl.PetServiceImpl  - Entra en el metodo savePet del servicio, se instancia una mascota y se manda al repository
+10:59:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Entramos en el metodo savePerson del repository
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+10:59:40--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/happypeoits.properties
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+10:59:40--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/happypeoits?serverTimezone=UTC User: root Password: 1234
+10:59:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se genera la peticion a BBDD
+10:59:40--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Peticion a BBDD: INSERT INTO pet(name, location, description, typePet, photo) VALUES (?, ?, ?, ?, ?);
+10:59:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se perpara la peticion
+10:59:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se ejecuta la peticion
+10:59:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+10:59:40--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se llama al metodo closeConnection
+10:59:40--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+10:59:40--[main] INFO  edu.beca.es.eoi.UIConsole.BirdMenu  - Entra en el menu de pajaro para acabar de completar los datos de la mascota
+10:59:54--[main] INFO  edu.beca.es.eoi.controller.OwnerController  - Entra en el metodo saveOwner conectando con el servidor
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Entramos en el metodo saveOwner del repository
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+10:59:54--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/happypeoits.properties
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+10:59:54--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/happypeoits?serverTimezone=UTC User: root Password: 1234
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Se genera la peticion a BBDD
+10:59:54--[main] DEBUG edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Peticion a BBDD: INSERT INTO owner(ownername, tlf, idPet) VALUES (?, ?, ?);
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Se perpara la peticion
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Se ejecuta la peticion
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.OwnerRepositoryJDBCImpl  - Se llama al metodo closeConnection
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
+10:59:54--[main] DEBUG edu.beca.es.eoi.UIConsole.BirdMenu  - Datos mascota: Piolin alte amarillo, pequeñito, cantor alskdjañlsdkg amarillo
+10:59:54--[main] INFO  edu.beca.es.eoi.controller.PetController  - Entra en el metodo saveBird del controlador
+10:59:54--[main] INFO  edu.beca.es.eoi.serviceImpl.BirdServiceImpl  - Entra en el menu de saveCat
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Entramos en el metodo saveBird del repository
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo getConnection
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo propertiesAplicate
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - llamo al metodo readProperties
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Entro en el metodo readProperties de mi aplicacion:
+10:59:54--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Ruta del archivo: src/main/resources/happypeoits.properties
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Salgo del metodo readProperties de mi aplicacion:
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Aqui abro la conexion con un patron singletone
+10:59:54--[main] DEBUG edu.beca.es.eoi.dataManager.DataManager  - Los parametros de conexion son: Url: jdbc:mysql://localhost:3306/happypeoits?serverTimezone=UTC User: root Password: 1234
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se genera la peticion a BBDD
+10:59:54--[main] DEBUG edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Peticion a BBDD: INSERT INTO bird(colour, idPet) VALUES (?, ?);
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se perpara la peticion
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se ejecuta la peticion
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se cierra la peticion a BBDD
+10:59:54--[main] INFO  edu.beca.es.eoi.repositoryImpl.PetRepositoryJDBCImpl  - Se llama al metodo closeConnection
+10:59:54--[main] INFO  edu.beca.es.eoi.dataManager.DataManager  - Se cierra la conexion
