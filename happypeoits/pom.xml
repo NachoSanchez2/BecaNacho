@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>edu.beca.es.eoi</groupId>
+	<artifactId>happypeoits</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>happypeoits Maven Webapp</name>
+	<!-- FIXME change it to the project's website -->
+	<url>http://localhost:8080/happypeoits</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<!-- Maven compiler -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<!-- Dependency version -->
+		<lombok.version>1.18.16</lombok.version>
+		<log4j.version>1.2.17</log4j.version>
+		<junit.version>5.3.1</junit.version>
+		<mysql.version>8.0.22</mysql.version>
+		<servlet.version>2.5</servlet.version>
+
+		<!-- Plugin version -->
+		<mavensurefire.plugin.version>3.0.0-M4</mavensurefire.plugin.version>
+		<mavendependency.plugin.version>2.22.1</mavendependency.plugin.version>
+		<mavenclean.plugin.version>3.1.0</mavenclean.plugin.version>
+		<mavenresources.plugin.version>3.0.2</mavenresources.plugin.version>
+		<mavencompiler.plugin.version>3.8.0</mavencompiler.plugin.version>
+		<mavenwar.plugin.version>3.2.2</mavenwar.plugin.version>
+		<maveninstall.plugin.version>2.5.2</maveninstall.plugin.version>
+		<mavendeploy.plugin.version>2.8.2</mavendeploy.plugin.version>
+		
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>apache-log4j-extras</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>happypeoits</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${mavensurefire.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>${mavenclean.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>${mavenresources.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${mavencompiler.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${mavenwar.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>${maveninstall.plugin.version}</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>${mavendeploy.plugin.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>

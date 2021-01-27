@@ -22,41 +22,37 @@ public class MenuPrincipal {
 
 	public void printMainMenu() {
 		logger.info("Se entra en el menuPrincipal");
-		boolean exitOK = false;
-		do {
-			System.out.println("Bienvenido al gestor de universidad");
-			System.out.println("* * * * * * * * * * * * * * * * * *");
-			System.out.println("   1.- Dar de alta un usuario      \n" + "   2.- Buscar un usuario           \n"
-					+ "   3.- Modificar un usuario        \n" + "   4.- Borrar un usuario           \n"
-					+ "   5.- Salir                       ");
-			System.out.println("* * * * * * * * * * * * * * * * * *");
-			int userOption = 0;
+		System.out.println("Bienvenido al gestor de universidad");
+		System.out.println("* * * * * * * * * * * * * * * * * *");
+		System.out.println("   1.- Dar de alta un usuario      \n" + "   2.- Buscar un usuario           \n"
+				+ "   3.- Modificar un usuario        \n" + "   4.- Borrar un usuario           \n"
+				+ "   5.- Salir                       ");
+		System.out.println("* * * * * * * * * * * * * * * * * *");
+		int userOption = 0;
 
-			try {
-				userOption = ESCANERENTEROS.nextInt();
-			} catch (InputMismatchException e) {
-				System.out.println("El valor introducido no es correcto, por favor vuelvalo a intentar");
-				e.printStackTrace();
-				printMainMenu();
-			}
-			switch (userOption) {
-			case SAVE:
-				SAVEMENU.printMenuDarAlta();
-				break;
-			case READ:
-				READMENU.printMenuBuscar();
-				break;
-			case UPDATE:
-				UPDATEMENU.printMenuModificar();
-				break;
-			case DELETE:
-				DELETEMENU.printMenuBorrar();
-				break;
-			case EXIT:
-				exitOK = true;
-				break;
-			}
-		} while (!exitOK);
+		try {
+			userOption = ESCANERENTEROS.nextInt();
+		} catch (InputMismatchException e) {
+			System.out.println("El valor introducido no es correcto, por favor vuelvalo a intentar");
+			e.printStackTrace();
+			printMainMenu();
+		}
+		switch (userOption) {
+		case SAVE:
+			SAVEMENU.printMenuDarAlta();
+			break;
+		case READ:
+			READMENU.printMenuBuscar();
+			break;
+		case UPDATE:
+			UPDATEMENU.printMenuModificar();
+			break;
+		case DELETE:
+			DELETEMENU.printMenuBorrar();
+			break;
+		case EXIT:
+			break;
+		}
 		ESCANERENTEROS.close();
 	}
 }

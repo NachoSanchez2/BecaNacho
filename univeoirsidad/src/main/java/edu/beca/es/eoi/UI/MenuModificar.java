@@ -54,11 +54,9 @@ public class MenuModificar {
 		case DNI:
 			updateByDni();
 			break;
-
 		}
 
 		ESCANERENTEROS.close();
-		ESCANERSTRINGS.close();
 	}
 
 	public void updateByUsername() {
@@ -130,6 +128,7 @@ public class MenuModificar {
 			e.printStackTrace();
 			MENU.printMainMenu();
 		}
+		ESCANERSTRINGS.close();
 	}
 
 	public void updateByDni() {
@@ -181,5 +180,6 @@ public class MenuModificar {
 			e.printStackTrace();
 			MENU.printMainMenu();
 		}
+		ESCANERSTRINGS.close();
 	}
 }
